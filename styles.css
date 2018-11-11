@@ -141,7 +141,7 @@ body{
     height: 50px;
     margin-right: 50%;
     border: 1px solid red; 
-    position: relative;
+    padding-left: 0px;
 }
 
 .search__tab {
@@ -151,6 +151,9 @@ body{
     flex-basis: 30%;
     border: 1px solid green;
     height: inherit;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
 }
 
 .search__tabs__button {
@@ -161,14 +164,29 @@ body{
 }
 
 .tab__corner {
+    height: 50px;
+    width: inherit;
+    background-color: green;
+    z-index: 10;
+}
+
+.search__tab:before, .search__tab:after {
     z-index: -1;
     position: absolute;
-    left: 13px;
-    right: 13px;
+    content: "";
     box-sizing: border-box;
     border: 18px solid transparent;
-    border-width: 0 8px 50px 8px;
     border-bottom-color: white;
+}
+
+.search__tab:before {
+    left: -20px;
+    border-width: 0 8px 50px 20px;
+}
+
+.search__tab:after {
+    right: -20px;
+    border-width: 0 20px 50px 8px;
 }
 
 .search input {
