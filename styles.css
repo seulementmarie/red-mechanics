@@ -12,12 +12,12 @@ body{
     background-color: rgb(39, 37, 37);
 }
 
-.header--element{
+.header__element{
     display: flex;
     color: whitesmoke;  
 }
 
-.header--main{
+.header__main{
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -28,22 +28,22 @@ body{
     left: 50%;
 }
 
-.header--contacts{
+.header__contacts{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 20px; 
+    margin-left: 5%; 
     margin-top: 20px;
     margin-bottom: 20px;
     min-width: 300px; 
     border: 1px solid red;
 }       
 
-.header--main--title{   
+.header__main__title{   
     font-size: 20px;
 }
 
-.header--main--moto{
+.header__main__moto{
     font-size: 12px;
 }
 
@@ -52,23 +52,23 @@ body{
     position: relative;
 }
 
-.search--info{
+.search__info{
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
-.search--info ul{
+.search__info ul {
     width: 50%;
     height: inherit;   
     margin: 0px;
     order: 1;
-    background-color: grey;
+    background-color: rgb(184, 169, 169);
     border: 1px solid red;
     color: white;
 }
 
-.search--info img{
+.search__info img {
     width: 50%;
     height: 100%;
     order: 2;
@@ -76,29 +76,18 @@ body{
     border: 1px solid red;
 }
 
-.search input {
-    top: 70%;
-    z-index: 10;
-    position: absolute;
-    height: 30px;
-    width: 90%;
-    border: 1px solid red;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
 @media all and (max-width: 500px) {
-    .search--info { 
+    .search__info { 
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
     }
 
-    .search--info ul {
+    .search__info ul {
         height: 50%;
         width: 100%;
     }
 
-    .search--info img {
+    .search__info img {
         height: 50%;
         width: 100%;
     }
@@ -125,7 +114,7 @@ body{
 .header--icons{
     display: flex;
     color: whitesmoke;
-    margin-right: 20px; 
+    margin-right: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid red;  
@@ -133,6 +122,65 @@ body{
 
 .search{
     background-color: green;
+}
+
+.search__area{
+    z-index:10;
+    position: absolute;
+    top: 70%;
+    height: 120px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 1px solid red;
+}
+
+.search__tabs {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    margin-right: 50%;
+    border: 1px solid red; 
+    position: relative;
+}
+
+.search__tab {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 30%;
+    border: 1px solid green;
+    height: inherit;
+}
+
+.search__tabs__button {
+    position: absolute;
+    height: inherit;
+    border: 1px solid yellow;
+    background-color: transparent;
+}
+
+.tab__corner {
+    z-index: -1;
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    box-sizing: border-box;
+    border: 18px solid transparent;
+    border-width: 0 8px 50px 8px;
+    border-bottom-color: white;
+}
+
+.search input {
+    top: 70%;
+    z-index: 10;
+    position: absolute;
+    height: 30px;
+    width: 90%;
+    border: 1px solid red;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: grey;
 }
 
 .slider{
@@ -150,3 +198,7 @@ body{
 .footer{
     background-color: blue;
 }
+
+ 
+  
+ 
