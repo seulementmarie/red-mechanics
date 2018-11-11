@@ -50,6 +50,7 @@ body{
 .search{
     height: auto;
     position: relative;
+    background-color: rgb(63, 64, 70);
 }
 
 .search__info{
@@ -59,13 +60,23 @@ body{
 }
 
 .search__info ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
-    height: inherit;   
-    margin: 0px;
+    height: 200px;   
+    padding: 1% 1% 1% 5%;
+    margin-top: 5%;
     order: 1;
-    background-color: rgb(184, 169, 169);
     border: 1px solid red;
     color: white;
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(63, 64, 70, 1), rgba(206, 152, 64, .7));
+}
+
+.search__info li {
+    color: white;
+    list-style: none;
 }
 
 .search__info img {
@@ -120,15 +131,12 @@ body{
     border: 1px solid red;  
 }
 
-.search{
-    background-color: green;
-}
 
 .search__area{
     z-index:10;
     position: absolute;
     top: 70%;
-    height: 120px;
+    height: 80px;
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
@@ -138,10 +146,12 @@ body{
 .search__tabs {
     display: flex;
     width: 50%;
-    height: 50px;
+    height: 30px;
     margin-right: 50%;
     border: 1px solid red; 
     padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .search__tab {
@@ -163,12 +173,6 @@ body{
     background-color: transparent;
 }
 
-.tab__corner {
-    height: 50px;
-    width: inherit;
-    background-color: green;
-    z-index: 10;
-}
 
 .search__tab:before, .search__tab:after {
     z-index: -1;
@@ -181,24 +185,34 @@ body{
 
 .search__tab:before {
     left: -20px;
-    border-width: 0 8px 50px 20px;
+    border-width: 0 8px 30px 20px;
 }
 
 .search__tab:after {
     right: -20px;
-    border-width: 0 20px 50px 8px;
+    border-width: 0 20px 30px 8px;
 }
 
-.search input {
-    top: 70%;
-    z-index: 10;
-    position: absolute;
-    height: 30px;
+.search__field {
+    background-color: white;
+    height: 45px;
+    border: 1px solid blue;
+    display: flex;
+}
+
+.search__field input {
+    height: 40px;
     width: 90%;
     border: 1px solid red;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-left: 30px;
     color: grey;
+}
+
+.search__field img {
+    height: 30px;
+    width: 5%;
+    margin-top: 7px;
+    border: 1px solid red;
 }
 
 .slider{
