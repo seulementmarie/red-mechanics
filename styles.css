@@ -222,7 +222,7 @@ body{
     align-content: center;
     align-items: center;
     justify-content: space-around;
-    height: 400px;
+    height: 450px;
 }
 
 .slider__item{
@@ -231,7 +231,8 @@ body{
     justify-content: space-between;
     align-items: center;
     border: 1px solid violet;
-    height: 90%;
+    margin-top: 20px;
+    height: 70%;
     width: 90%;
 }
 
@@ -298,13 +299,60 @@ body{
     margin: 10px 10px 10px 10px;
 }
 
-.relevant-goods{
-    background-color: aqua;
+.goods {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.catalog{
-    background-color: blueviolet;
+.goods h2 {
+    color: #cf993e;
+    margin: 5%;
 }
+
+.goods__list {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    padding: 0;
+}
+
+.goods__list__card {
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0% 5% 0%;
+}
+
+.goods__list__card h3 {
+    color: #cf993e; 
+}
+
+.goods__list__card li {
+    color: black;
+    list-style: none;
+    margin: 2% 0% 2% 0%;
+}
+
+.goods__list__card img {
+    /* height: 0%; */
+    width: 40%;
+}
+
+/* .catalog{
+    background-color: blueviolet;
+} */
 
 .footer{
     background-color: blue;
