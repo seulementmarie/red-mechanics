@@ -324,15 +324,22 @@ body{
     padding: 0;
 }
 
-.goods__list__card {
+.goods__list__card--empty, .goods__list__card {
     height: 200px;
     width: 400px;
-    background-color: white;
+    margin: 5% 0% 5% 0%;
     display: flex;
+}
+
+.goods__list__card--empty img {
+    width: 100%;
+}
+
+.goods__list__card {
+    background-color: white;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5% 0% 5% 0%;
 }
 
 .goods__list__card h3 {
@@ -346,7 +353,6 @@ body{
 }
 
 .goods__list__card img {
-    /* height: 0%; */
     width: 40%;
 }
 
