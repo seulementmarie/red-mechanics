@@ -1,6 +1,7 @@
 body{
     display: grid;
     width: auto;
+    background-color: rgb(39, 37, 37);
 }
 
 .header{
@@ -300,7 +301,10 @@ body{
 }
 
 .goods {
-    background-color: black;
+    background-image: 
+    linear-gradient(-75deg, transparent, transparent),
+    linear-gradient(-75deg, rgba(206, 152, 64, .7) 10%, rgb(63, 64, 70)),
+    linear-gradient(-75deg,  rgb(63, 64, 70), rgba(206, 152, 64, .7) 10%,);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -322,6 +326,10 @@ body{
     flex-wrap: wrap;
     border: 1px solid red;
     padding: 0;
+}
+
+.goods__list li {
+    list-style: none;
 }
 
 .goods__list__card--empty, .goods__list__card {
@@ -356,9 +364,40 @@ body{
     width: 40%;
 }
 
-/* .catalog{
-    background-color: blueviolet;
-} */
+.goods__catalog {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    height: 400px;
+}
+
+.goods__catalog li {
+    list-style: none;
+}
+
+.goods__catalog__letter {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.goods__catalog__letter div{
+    color: #cf993e;
+}
+
+.goods__catalog__letter ul{
+    list-style: none;
+    color: white;
+    padding: 0px;
+    margin-left: 10px;
+}
 
 .footer{
     background-color: blue;
