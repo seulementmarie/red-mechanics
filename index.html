@@ -299,6 +299,44 @@
                 </li>
             </ul>
         </div>    
-        <div class="footer">footer</div>    
+        <div class="footer">
+            <footer></footer>
+            <div class="footer__content">
+                <div class="footer__content__nav">
+                    <div class="footer__content__nav__caption">AUTO PARTS</div>
+                    <div class="footer__content__nav__menu">
+                        <ul>
+                            <li>Оплата и доставка</li>
+                            <li>Возврат</li>
+                            <li>Оплата и доставка</li>
+                            <li>Каталог ТО</li>
+                            <li>Сопутствующие товары</li>
+                            <li>Акции</li>
+                        </ul>
+                        <div class="footer__content__nav__social-networks">
+                            <div>Присоединяйтесь!</div>
+                            <ul class="footer__content__social-networks__links">
+                                <li><i class="flaticon-shop"></i></li>
+                                <li><i class="flaticon-shop"></i></li>
+                                <li><i class="flaticon-shop"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__content__map">
+                
+                </div>
+            </div>
+        </div>
+        <script>
+            function initMap() {
+            var coords = {lat: -25.344, lng: 131.036};
+            var map = new google.maps.Map(document.getElementsByClassName("footer__content__map").item(0), {zoom: 4, center: coords});
+            var marker = new google.maps.Marker({position: coords, map: map});
+            }
+        </script>  
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVioMtU3O8sbtWVzzbZSu12TdGD6IYMmI&callback=initMap">
+        </script>
     </body>
 </html>
