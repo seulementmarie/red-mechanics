@@ -3,16 +3,21 @@ body{
     flex-direction: column;
     width: auto;
     background-color: rgb(39, 37, 37);
-    height: auto;
-    /* height: 100vh;
-    width: 100vw; */
+    min-height: 100%;
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body li {
+    list-style: none;
 }
 
 .header{
     display: flex;
+    flex-grow: 0.3;
     flex-wrap: wrap;
-    height: auto;
+    height: 10%;
+    min-height: 100px;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(39, 37, 37);
@@ -20,15 +25,17 @@ body{
 
 .header__element{
     display: flex;
-    color: whitesmoke;  
+    color: whitesmoke;
+    font-size: 20px;  
 }
 
 .header__main{
     display: flex;
     position: absolute;
     flex-direction: column;
-    align-items: space-evenly;
-    justify-content: center;    
+    align-items: space-between;
+    justify-content: center; 
+    align-items: center;   
     border: 1px solid red;
     margin-left: -60px;
     left: 50%;
@@ -38,22 +45,30 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 5%; 
+    margin-left: 2%; 
     margin-top: 20px;
     margin-bottom: 20px;
-    min-width: 300px; 
+    width: 25%; 
     border: 1px solid red;
-}       
+}   
 
-.header__main__title{   
-    font-size: 20px;
+/* @font-face {
+    font-family: "Zuider Postduif Demo"; 
+    src: url("fonts/zuider postduif demo.ttf") format('truetype');
+} */
+
+.header__main--title{   
+    font-size: 30px;
+    font-family: 'Monolith Sans';
 }
 
-.header__main__moto{
+.header__main--moto{
     font-size: 12px;
 }
 
 .search{
+    display: flex;
+    flex-grow: 1;
     height: auto;
     position: relative;
     background-color: rgb(63, 64, 70);
@@ -131,11 +146,21 @@ body{
 .header__icons{
     display: flex;
     color: whitesmoke;
-    margin-right: 5%;
+    justify-content: space-between;
+    margin-right: 2%;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid red;  
+    width: 5%;
+    max-height: 30px;
+    border: 1px solid red;
 }
+
+.header__icons img{
+    display: flex;
+    width: 50%;
+}
+
+
 
 
 .search__area{
@@ -224,6 +249,7 @@ body{
 .slider {
     background-color: #cf993e;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -314,6 +340,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
+    flex-grow: 3;
     align-items: center;
 }
 
@@ -406,6 +433,12 @@ body{
     margin-left: 10px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
+
 .footer footer {
     height: 10px;
     background-color: #cf993e;
@@ -414,7 +447,7 @@ body{
 .footer__content {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    min-height: 390px;
 }
 
 .footer__content__nav {
@@ -429,7 +462,7 @@ body{
 
 
 .footer__content__nav__caption {
-    margin: 1% 0 1% 20%;
+    margin: 5% 0 5% 20%;
 }
 
 .footer__content__nav__menu {
@@ -440,20 +473,22 @@ body{
     margin: 0 0 0 20%;
 }
 
-.footer__content__nav__menu ul {
+.footer__content__nav__menu ul{
     border: 1px solid yellowgreen;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: space-around;
     padding: 0;
     height: 40%;
+    width: 100%;
+    margin: 0;
 }
 
-.footer__content__nav__menu li {
+/* .footer__content__nav__menu li {
     list-style: none;
-}
+} */
 
 .footer__content__nav__social-networks {
     display: flex;
@@ -461,16 +496,23 @@ body{
     align-items: center;
     justify-content: space-between;
     border: 1px solid blueviolet;
+    height: 60%;
+    padding-left: 7%;
 }
 
-.footer__content__nav__social-networks ul {
+.footer__content__social-networks__links {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin: 0;
+    border: 1px solid red;
+    width: 50%;
+    height: 100%;
 }
 
-.footer__content__nav__social-networks li{
-    list-style: none;
+.footer__content__social-networks__links img{
+    height: 100%;
+    width: 20%;
 }
 
 .footer__content__map {
