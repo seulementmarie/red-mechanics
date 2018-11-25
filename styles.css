@@ -12,7 +12,7 @@ body li {
     list-style: none;
 }
 
-.header{
+.header {
     display: flex;
     flex-grow: 0.3;
     flex-wrap: wrap;
@@ -23,13 +23,13 @@ body li {
     background-color: rgb(39, 37, 37);
 }
 
-.header__element{
+.header__element {
     display: flex;
     color: whitesmoke;
     font-size: 20px;  
 }
 
-.header__main{
+.header__main {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -41,7 +41,7 @@ body li {
     left: 50%;
 }
 
-.header__contacts{
+.header__contacts {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -57,16 +57,16 @@ body li {
     src: url("fonts/zuider postduif demo.ttf") format('truetype');
 } */
 
-.header__main--title{   
+.header__main--title {   
     font-size: 30px;
     font-family: 'Monolith Sans';
 }
 
-.header__main--moto{
+.header__main--moto {
     font-size: 12px;
 }
 
-.search{
+.search {
     display: flex;
     flex-grow: 1;
     height: auto;
@@ -74,7 +74,7 @@ body li {
     background-color: rgb(63, 64, 70);
 }
 
-.search__info{
+.search__info {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -107,43 +107,9 @@ body li {
     background-color: grey;
     border: 1px solid red;
 }
-
-@media all and (max-width: 500px) {
-    .search__info { 
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
-    }
-
-    .search__info ul {
-        height: 50%;
-        width: 100%;
-    }
-
-    .search__info img {
-        height: 50%;
-        width: 100%;
-    }
-
-    .header {
-        flex-direction: column;
-    }
-
-    .header--main{
-        order: 1;
-    }
-
-    .header--contacts{
-        order: 2;
-        flex-direction: column;
-    }
-
-    .header__icons{
-        order: 3;
-    }
-  } 
     
 
-.header__icons{
+.header__icons {
     display: flex;
     color: whitesmoke;
     justify-content: space-between;
@@ -155,7 +121,7 @@ body li {
     border: 1px solid red;
 }
 
-.header__icons img{
+.header__icons img {
     display: flex;
     width: 50%;
 }
@@ -163,7 +129,7 @@ body li {
 
 
 
-.search__area{
+.search__area {
     z-index:10;
     position: absolute;
     top: 70%;
@@ -258,7 +224,7 @@ body li {
     width: 100%;
 }
 
-.slider__item{
+.slider__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -510,7 +476,7 @@ body li {
     height: 100%;
 }
 
-.footer__content__social-networks__links img{
+.footer__content__social-networks__links img {
     height: 100%;
     width: 20%;
 }
@@ -519,6 +485,120 @@ body li {
     border: 1px solid yellowgreen;
     flex: 2;
 }
+
+.capture {
+    display: flex;
+    flex-grow: 0.3;
+    flex-wrap: wrap;
+    height: 10%;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cf993e;
+    color: white;
+    font-size: 12px;
+    padding: 0% 2% 0% 2%;
+}
+
+.capture__path-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 40%;
+    padding: 0;
+}
+
+.capture__path-line :last-child {
+    font-size: 24px;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    widows: 100%;
+    height: auto;
+    padding: 2%;
+    border: 1px solid yellowgreen;
+    background: linear-gradient(90deg, rgba(142, 141, 139, 0.7), rgba(63, 64, 70, 1));
+}
+
+.catalog__filters {
+    height: 100%;
+    width: 20%;
+    border: 1px solid violet;
+}
+
+.catalog__list {
+    height: 100%;
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.catalog__list__card {
+    width: 250px;
+    height: 350px;
+    margin: 5% 0% 5% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 2%;
+}
+
+.catalog__list__card img {
+    width: 100%;
+}
+
+.catalog__list__card ul {
+    padding: 0;
+}
+
+.catalog__list__card ul :last-child {
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+
+
+/* @media all and (max-width: 500px) {
+    .search__info { 
+     On small screens, we are no longer using row direction but column
+      flex-direction: column;
+    }
+
+    .search__info ul {
+        height: 50%;
+        width: 100%;
+    }
+
+    .search__info img {
+        height: 50%;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header--main{
+        order: 1;
+    }
+
+    .header--contacts{
+        order: 2;
+        flex-direction: column;
+    }
+
+    .header__icons{
+        order: 3;
+    }
+  }  */
 
  
   
