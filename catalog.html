@@ -3,8 +3,13 @@
     <head>
         <title>AutoParts</title>
         <meta charset="UTF-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="icons/font/flaticon.css">
+        <link rel="stylesheet" href="catalog-icon.css"/>
     </head>
     <body>
         <div class="header">
@@ -35,171 +40,238 @@
             <div class="capture__current-status">Товары 1-12 из 1000</div>
         </div>
         <div class="catalog">
-            <div class="catalog__filters">
-
+            <div class="catalog__container">
+                <div class="catalog__container__filters">
+                    <div class="catalog__container__filters__header">
+                        <button id="catalog__container__filters__header_button">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <label for="catalog__container__filters__header_button">Каталог ТО и товары</label>
+                    </div>
+                    <div class="catalog__container__filters__flags">
+                        <p class="catalog__container__filters__caption">Производитель</p>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="castrol" value="castrol" id="castrol" checked>
+                            <label for="castrol">Castrol</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="ford" value="ford" id="ford" unchecked>
+                            <label for="ford">Ford</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="general_motors" value="general_motors" id="general_motors" unchecked>
+                            <label for="general_motors">General Motors</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="liqui_moly" value="liqui_moly" id="liqui_moly" unchecked>
+                            <label for="liqui_moly">Luqui Moly</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="mobil" value="mobil" id="mobil" unchecked>
+                            <label for="mobil">Mobil</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="nissan" value="nissan" id="nissan" unchecked>
+                            <label for="nissan">Nissan</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="total" value="total" id="total" unchecked>
+                            <label for="total">Total</label>
+                        </div>
+                        <button class="catalog__container__filters__button">Все производители</button>
+                    </div>
+                    <div class="catalog__container__filters__range">
+                        <p class="catalog__container__filters__caption">Ценовой диапозон, руб.</p>
+                        <input type="range" class="catalog__container__filters__range" name="money_range" min="0" max="100000">
+                    </div>
+                    <div class="catalog__container__filters__flags">
+                        <p class="catalog__container__filters__caption">Объем, л</p>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="v_01" value="v_01" id="v_01" checked>
+                            <label for="v_01">0.1</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="v_025" value="v_025" id="v_025" unchecked>
+                            <label for="v_025">0.25</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="v_05" value="v_05" id="v_05" unchecked>
+                            <label for="v_05">0.25</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="v_06" value="v_06" id="v_06" unchecked>
+                            <label for="v_06">0.6</label>
+                        </div>
+                        <div class="catalog__container__filters__checkbox">
+                            <input type="checkbox" name="v_1" value="v_1" id="v_1" unchecked>
+                            <label for="v_01">1</label>
+                        </div>
+                        <button class="catalog__container__filters__button">Смотреть весь список</button>
+                    </div>  
+                    <button class="catalog__container__filters__clear-button">Сбросить все фильтры</button>
+                </div>
+                <ul class="catalog__container__list">
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="catalog__list__card">
+                            <img src="images/goods/Quartz.png">
+                            <ul><h3>Mobil Ultra</h3>
+                                <li>1л Минеральное завтра после 00:30</li>
+                                <li>от 325 р.</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="catalog__list">
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="catalog__list__card">
-                        <img src="images/goods/Quartz.png">
-                        <ul><h3>Mobil Ultra</h3>
-                            <li>1л Минеральное завтра после 00:30</li>
-                            <li>от 325 р.</li>
-                        </ul>
-                        
-                    </div>
-                </li>
-            </ul>
         </div>    
         <div class="footer">
             <footer></footer>

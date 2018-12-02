@@ -515,21 +515,95 @@ body li {
 
 .catalog {
     display: flex;
-    flex-direction: row;
-    widows: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
     height: auto;
-    padding: 2%;
+    /* padding: 2%; */
     border: 1px solid yellowgreen;
-    background: linear-gradient(90deg, rgba(142, 141, 139, 0.7), rgba(63, 64, 70, 1));
+    background: linear-gradient(90deg, rgba(142, 141, 139, 0.7),rgb(24, 25, 27));
 }
 
-.catalog__filters {
+
+.catalog__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    /* margin: 2%; */
+    padding: 0;
+    border: 1px solid red;
+}
+
+.catalog__container__filters {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 20%;
     border: 1px solid violet;
 }
 
-.catalog__list {
+
+.catalog__container__filters__header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.catalog__container__filters__header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 0;
+}
+
+.catalog__container__filters__header label {
+    margin: 0;
+    font-size: 12px;
+}
+
+.catalog__container__filters__caption {
+    color: #cf993e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.catalog__container__filters__checkbox input {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.catalog__container__filters__checkbox label {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+.catalog__container__filters__button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+    border-bottom: 1px dashed white;
+    padding: 0;
+}
+
+.catalog__container__filters__range {
+    font-display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+}
+
+.catalog__container__list {
     height: 100%;
     width: 80%;
     border: 1px solid red;
@@ -538,6 +612,15 @@ body li {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.catalog__container__filters__clear-button {
+    background-color: transparent;
+    color: #cf993e;
+    border: 2px solid #cf993e; 
+    font-size: 12 px;
+    margin-top: 2px;
+}
+
 
 .catalog__list__card {
     width: 250px;
@@ -563,6 +646,7 @@ body li {
     font-size: 20px;
     margin-top: 10%;
 }
+
 
 
 
